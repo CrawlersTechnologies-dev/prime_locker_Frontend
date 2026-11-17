@@ -1,0 +1,48 @@
+/* Design tokens — taken from the "Foundations" board of Prime Locker UI.
+   "Minimal, calm, trustworthy. Colour is reserved for status." */
+:root {
+  /* Brand */
+  --navy: #1F3D7A;
+  --navy-hover: #152B57;
+  --navy-deep: #172B52;
+  --navy-tint: #EEF2FA;
+  --navy-soft: #D5DDEE;
+  --amber: #F2B544;
+
+  /* Neutrals */
+  --ink: #15171C;
+  --ink-2: #3D414A;
+  --muted: #5F646E;
+  --faint: #8A909B;
+  --line: #E4E4DF;
+  --line-soft: #EDEDE8;
+  --line-strong: #D3D3CC;
+  --ground: #F5F5F2;
+  --ground-2: #F7F7F4;
+  --segment: #EAEAE5;
+  --white: #FFFFFF;
+
+  /* Status (fg / bg) */
+  --ok: #1B7A48;     --ok-bg: #E8F4ED;
+  --bad: #B3261E;    --bad-bg: #FBECEA;
+  --warn: #8A5A00;   --warn-bg: #FBF1DE;
+  --info: #1F5FAF;   --info-bg: #EAF1FB;
+  --mute-bg: #EFEFEB;
+  --alert: #D9922E;
+  --offline: #B8BCC4;
+
+  /* Type */
+  --font: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 24px;
+
+  /* Layout */
+  --sidebar-w: 240px;
+  --topbar-h: 64px;
+  --page-pad: 32px;
+}

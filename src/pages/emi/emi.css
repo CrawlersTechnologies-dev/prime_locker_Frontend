@@ -1,0 +1,31 @@
+.plan-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.plan-card { padding: 22px; display: flex; flex-direction: column; gap: 16px; }
+.plan-price { display: flex; align-items: baseline; gap: 6px; }
+.plan-price b { font-size: 26px; font-weight: 600; }
+@media (max-width: 1180px) { .plan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .plan-grid { grid-template-columns: 1fr; } }
+
+.emi-hero { padding: 22px 24px; border-radius: 14px; background: var(--navy-deep); color: var(--white); display: flex; flex-direction: column; gap: 6px; }
+.emi-hero span { font-size: 13px; color: #C9D3E8; }
+.emi-hero b { font-size: 40px; font-weight: 600; letter-spacing: -0.02em; }
+.sch-row { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--line-soft); font-size: 14px; }
+.sch-row:last-child { border-bottom: 0; }
+.sch-row span:first-child { color: var(--muted); }
+
+.sum-strip { display: flex; flex-wrap: wrap; }
+.sum-strip > div { flex: 1 1 140px; padding: 18px 24px; border-right: 1px solid var(--line-soft); display: flex; flex-direction: column; gap: 4px; }
+.sum-strip > div:last-child { border-right: 0; }
+.sum-strip span:first-child { font-size: 13px; color: var(--muted); }
+.sum-strip span:last-child { font-size: 20px; font-weight: 600; }
+
+.age-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.age { padding: 16px 18px; border-radius: 14px; border: 1px solid var(--line); background: var(--white); display: flex; flex-direction: column; gap: 4px; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.age[aria-pressed="true"] { border: 2px solid var(--navy); padding: 15px 17px; }
+.age b { font-size: 22px; font-weight: 600; }
+.age small { font-size: 13px; color: var(--ink-2); }
+@media (max-width: 900px) { .age-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.bulk-bar { display: flex; align-items: center; gap: 12px; padding: 10px 20px; background: var(--navy-deep); color: var(--white); flex-wrap: wrap; }
+.bulk-bar strong { flex-grow: 1; font-size: 14px; }
+.bulk-bar .btn-ghost-light { border: 1px solid rgba(255,255,255,.3); background: transparent; color: var(--white); }
+.row-check { width: 18px; height: 18px; margin: 0; accent-color: var(--navy); cursor: pointer; }

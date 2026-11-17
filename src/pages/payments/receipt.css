@@ -1,0 +1,21 @@
+.receipt-layout { display: flex; gap: 24px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+.receipt { width: 600px; max-width: 100%; padding: 36px 40px; display: flex; flex-direction: column; gap: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.04); }
+.receipt-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.receipt-amount { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 20px 0; border-top: 1px dashed var(--line-strong); border-bottom: 1px dashed var(--line-strong); }
+.receipt-amount b { font-size: 42px; font-weight: 600; letter-spacing: -0.02em; }
+.receipt-lines { margin: 0; }
+.receipt-lines > div { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--line-soft); font-size: 14px; }
+.receipt-lines > div:last-child { border-bottom: 0; }
+.receipt-lines dt { color: var(--muted); flex-shrink: 0; }
+.receipt-lines dd { margin: 0; text-align: right; }
+.receipt-foot { font-size: 12px; line-height: 18px; color: var(--muted); text-align: center; }
+.receipt-side { width: 300px; max-width: 100%; display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 640px) { .receipt { padding: 24px 20px; } }
+
+/* Print: only the receipt card */
+@media print {
+  .shell-side, .topbar, .crumbs, .receipt-side, .toasts { display: none !important; }
+  body, .shell, .shell-main { background: #fff !important; }
+  .page { padding: 0 !important; }
+  .receipt { box-shadow: none; border: 0; width: 100%; }
+}

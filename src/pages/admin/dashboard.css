@@ -1,0 +1,23 @@
+.dash-chart-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.legend { display: flex; gap: 16px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+.bars { display: flex; gap: 12px; }
+.bars-axis { width: 36px; position: relative; font-size: 12px; color: var(--muted); flex-shrink: 0; }
+.bars-axis span { position: absolute; right: 0; }
+.bars-plot { position: relative; display: flex; align-items: flex-end; justify-content: space-around; border-bottom: 1px solid var(--line-strong); }
+.bars-grid { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--line); }
+.bars-group { display: flex; align-items: flex-end; gap: 6px; position: relative; }
+.bars-group div { width: 22px; border-radius: 5px 5px 0 0; }
+.bars-labels { display: flex; justify-content: space-around; font-size: 12px; color: var(--muted); }
+.bars-labels span { width: 50px; text-align: center; }
+.bars-labels .is-current { font-weight: 600; color: var(--ink); }
+
+.status-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; gap: 2px; margin-bottom: 8px; }
+.status-list { list-style: none; margin: 0; padding: 0; }
+.status-list li { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line-soft); }
+.status-list li:last-child { border-bottom: 0; }
+.status-list b { font-size: 14px; font-weight: 600; }
+
+.link-arrow { font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }

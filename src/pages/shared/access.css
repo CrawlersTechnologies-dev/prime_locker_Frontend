@@ -1,0 +1,10 @@
+.access { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; }
+.access th, .access td { padding: 12px 24px; text-align: left; border-bottom: 1px solid var(--line-soft); }
+.access thead th { height: 36px; padding-top: 0; padding-bottom: 0; background: var(--ground-2); font-size: 12px; font-weight: 500; color: var(--muted); }
+.access tbody th[scope="row"] { font-weight: 400; }
+.access-group th { padding-top: 18px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.is-yes { color: var(--ok); font-weight: 600; }
+.is-own { color: var(--navy); font-weight: 600; }
+.is-no { color: var(--faint); }
+.access-legend { display: flex; gap: 24px; padding: 16px 24px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+.access-legend b { margin-right: 4px; }
